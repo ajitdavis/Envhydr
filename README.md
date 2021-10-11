@@ -109,5 +109,5 @@ Long term short term memory modeling is a type of recurrent neural network that 
 2. More research into why the data is flatter before 2000
 3. Look at why the levels at MG1, MG2 and WL are more variable than the LT sites.
 4. Compare analysis to other stream data to see how health compares.
-5. Normalize the testing, test every 30 days, test at same time.
+5. Normalize the testing, test every 30 days, test at the same time.
 6. Increase testing frequency so spikes in levels can be addressed faster.
