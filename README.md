@@ -104,5 +104,14 @@ Long term short term memory modeling is a type of recurrent neural network that 
 ### Core Concept
 The core concept of LSTM’s are the cell state, and it’s various gates. The cell state act as a transport highway that transfers relative information all the way down the sequence chain. You can think of it as the “memory” of the network. The cell state, in theory, can carry relevant information throughout the processing of the sequence. So even information from the earlier time steps can make it’s way to later time steps, reducing the effects of short-term memory. As the cell state goes on its journey, information get’s added or removed to the cell state via gates. The gates are different neural networks that decide which information is allowed on the cell state. The gates can learn what information is relevant to keep or forget during training.
 
+#### Building the LSTM
+ 
+In order to build the LSTM, we need to import a couple of modules from Keras:
+
+- Sequential for initializing the neural network
+- Dense for adding a densely connected neural network layer
+- LSTM for adding the Long Short-Term Memory layer
+- Dropout for adding dropout layers that prevent overfitting
+
 ![](./Images/LSTM_plot.png)
 
