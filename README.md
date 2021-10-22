@@ -101,5 +101,8 @@ Since we know that the stream is relatively stationary we are able to use these 
 ## LSTM modeling
 Long term short term memory modeling is a type of recurrent neural network that can be used to do time series analysis. It uses steps previous steps to predict forward. I created a model with a lag on 1 that has a Mean Absolute Error of 1.17 for the test data. This compares to the MAE of 1.319124 for my time series model.
 
+### Core Concept
+The core concept of LSTM’s are the cell state, and it’s various gates. The cell state act as a transport highway that transfers relative information all the way down the sequence chain. You can think of it as the “memory” of the network. The cell state, in theory, can carry relevant information throughout the processing of the sequence. So even information from the earlier time steps can make it’s way to later time steps, reducing the effects of short-term memory. As the cell state goes on its journey, information get’s added or removed to the cell state via gates. The gates are different neural networks that decide which information is allowed on the cell state. The gates can learn what information is relevant to keep or forget during training.
+
 ![](./Images/LSTM_plot.png)
 
